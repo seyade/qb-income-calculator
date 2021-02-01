@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { configureStore, createSlice } from '@reduxjs/toolkit';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
