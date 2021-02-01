@@ -1,0 +1,19 @@
+.ui-input {
+  min-width: 150px;
+  display: block;
+
+  &__label {
+    width: 300px;
+  }
+
+  &__label-text {
+    display: block;
+    font-size: 14px;
+    padding-bottom: 4px;
+  }
+
+  &__field {
+    padding: 6px;
+    width: 100%;
+  }
+}

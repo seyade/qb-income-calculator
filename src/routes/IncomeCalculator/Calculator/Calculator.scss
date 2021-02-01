@@ -1,0 +1,9 @@
+.calculator {
+  display: grid;
+  grid-template-columns: minmax(85%, auto) minmax(15%, auto);
+  grid-gap: 28px;
+
+  &__input {
+    width: 100%;
+  }
+}

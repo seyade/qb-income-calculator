@@ -1,0 +1,21 @@
+.total-income {
+  grid-column-start: 2;
+  grid-column-end: 6;
+
+  &__title {
+    margin: 0 0 4px;
+    font-size: 14px;
+  }
+
+  &__result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    background-color: rgba(44, 160, 28, 1);
+    color: white;
+    font-size: 44px;
+    font-weight: 800;
+  }
+}

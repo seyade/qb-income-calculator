@@ -1,25 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
+import Page from './components/Page';
+import IncomeCalculator from './routes/IncomeCalculator';
+import ItemOne from './routes/ItemOne';
+import ItemTwo from './routes/ItemTwo';
+import ItemThree from './routes/ItemThree';
+
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Page>
+        <Switch>
+          <Route path={'/'} exact component={IncomeCalculator} />
+          <Route path={'/item-one'} exact component={ItemOne} />
+          <Route path={'/item-two'} exact component={ItemTwo} />
+          <Route path={'/item-three'} exact component={ItemThree} />
+        </Switch>
+      </Page>
+    </Router>
   );
 }
 

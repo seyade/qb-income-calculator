@@ -1,0 +1,60 @@
+.ui-faq {
+  width: 600px;
+
+  &__title {
+    padding: 24px 44px 0;
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  &__item {
+    font-size: 14px;
+    border-top: 1px solid #dedede;
+
+    &:last-child {
+      border-bottom: 1px solid #dedede;
+    }
+
+    &-heading {
+      position: relative;
+      padding: 12px 44px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #dedede;
+      }
+
+      &-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &[aria-expanded='false'] {
+          &::after {
+            width: 0;
+            height: 0;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 4px solid #000;
+            content: '';
+          }
+        }
+
+        &[aria-expanded='true'] {
+          &::after {
+            width: 0;
+            height: 0;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-bottom: 4px solid #000;
+            content: '';
+          }
+        }
+      }
+    }
+
+    &-panel {
+      padding: 0 44px;
+    }
+  }
+}

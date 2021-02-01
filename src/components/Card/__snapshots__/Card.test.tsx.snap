@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card renders correctly 1`] = `
+<div
+  className="ui-card"
+>
+  <h3
+    className="ui-card__title"
+  >
+    My card
+  </h3>
+  <section
+    className="ui-card__body"
+  >
+    <p>
+      Card content
+    </p>
+  </section>
+</div>
+`;

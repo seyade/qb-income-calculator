@@ -1,0 +1,12 @@
+.ui-card {
+  position: relative;
+  width: 600px;
+  padding: 24px 44px;
+  font-family: 'Open sans';
+  background-color: rgba(236, 238, 241, 1);
+
+  &__title {
+    font-size: 28px;
+    font-weight: 800;
+  }
+}
